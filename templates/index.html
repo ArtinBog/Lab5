@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+  <section class="chat-box">
+    {% for p in posts %}
+      <div class="chat-post">
+          <p> <b>{{ User.query.get(p.author).username }}</b><br> {{ p.content }}</p>
+      </div>
+    {% endfor %}
+  </section>
+{% endblock %}

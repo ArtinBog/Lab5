@@ -1,0 +1,56 @@
+
+body {
+  background-color: skyblue;
+}
+
+.card {
+  top: 200px;
+  padding: 4rem;
+  border: solid lightgrey 1px;
+  border-radius: 10px;
+}
+
+.form-control {
+  border: 0;
+  background-color: #efefef;
+  height: 3.3rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.btn-primary {
+  height: 3.3rem;
+}
+
+.card-title {
+  color: grey;
+}
+
+ul.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+
+span.navbar-text {
+  border-left: solid 1px lightgrey;
+  padding-left: 15px;
+  color: black;
+}
+
+.chat-box {
+  border-radius: 20px;
+  background-color: white;
+  padding: 30px;
+}
+
+.chat-post, .newpost_input {
+  background-color: #EEE;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  min-height: 100px;
+}
+
+.newpost {
+  width: 80%;
+}
