@@ -6,7 +6,6 @@ from passlib.hash import sha256_crypt
 app = Flask(__name__)
 app.secret_key = "s14a"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/lab_5'
-FLASK_ENV=development
 
 db.init_app(app)
 
