@@ -2,8 +2,10 @@ from flask import Flask, flash, render_template, request, url_for, redirect, jso
 from models import db, User, Post
 from forms import SignupForm, LoginForm, NewpostForm
 from passlib.hash import sha256_crypt
+import os
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ["DATABASE_URL"]
 app.secret_key = "s14a"
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/lab_5'
 
